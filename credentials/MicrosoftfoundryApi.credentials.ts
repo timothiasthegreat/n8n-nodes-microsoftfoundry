@@ -13,7 +13,7 @@ export class MicrosoftfoundryApi implements ICredentialType {
 	icon = { light: 'file:../nodes/Microsoftfoundry/microsoftfoundry.svg', dark: 'file:../nodes/Microsoftfoundry/microsoftfoundry.dark.svg' } as const;
 
 	documentationUrl =
-		'https://github.com/firesideit/n8n-nodes-microsoftfoundry?tab=readme-ov-file#credentials';
+		'https://github.com/timothiasthegreat/n8n-nodes-microsoftfoundry?tab=readme-ov-file#credentials';
 
 	properties: INodeProperties[] = [
 		{

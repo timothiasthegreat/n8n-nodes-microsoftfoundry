@@ -37,7 +37,7 @@ export class MicrosoftFoundryChatModel implements INodeType {
 			resources: {
 				primaryDocumentation: [
 					{
-						url: 'https://github.com/firesideit/n8n-nodes-microsoftfoundry',
+						url: 'https://github.com/timothiasthegreat/n8n-nodes-microsoftfoundry',
 					},
 				],
 			},
