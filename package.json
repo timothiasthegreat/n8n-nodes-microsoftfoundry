@@ -1,14 +1,27 @@
 {
   "name": "n8n-nodes-microsoftfoundry",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.2.0",
+  "description": "n8n community node to use any Microsoft Foundry model deployment (OpenAI, Anthropic/Claude, DeepSeek, Kimi, and more) as a chat model for AI Agents",
   "license": "MIT",
-  "homepage": "",
-  "keywords": ["n8n-community-node-package"],
-  "author": { "name": "Timothy McBride", "email": "tim@firesideit.ca" },
+  "homepage": "https://github.com/firesideit/n8n-nodes-microsoftfoundry",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "microsoft-foundry",
+    "azure-ai-foundry",
+    "ai",
+    "llm",
+    "chat-model",
+    "anthropic",
+    "openai"
+  ],
+  "author": {
+    "name": "Timothy McBride",
+    "email": "tim@firesideit.ca"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/firesideit/n8n-nodes-microsoftfoundry.git"
   },
   "scripts": {
     "build": "n8n-node build",
@@ -19,19 +32,30 @@
     "release": "n8n-node release",
     "prepublishOnly": "n8n-node prerelease"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
+    "aiNodeSdkVersion": 1,
     "strict": true,
-    "credentials": ["dist/credentials/MicrosoftfoundryApi.credentials.js"],
-    "nodes": ["dist/nodes/Microsoftfoundry/Microsoftfoundry.node.js"]
+    "credentials": [
+      "dist/credentials/MicrosoftfoundryApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Microsoftfoundry/MicrosoftFoundryChatModel.node.js"
+    ]
   },
   "devDependencies": {
+    "@n8n/ai-node-sdk": "^0.19.8",
     "@n8n/node-cli": "*",
     "eslint": "9.32.0",
     "prettier": "3.6.2",
     "release-it": "^19.0.4",
     "typescript": "5.9.2"
   },
-  "peerDependencies": { "n8n-workflow": "*" }
+  "peerDependencies": {
+    "@n8n/ai-node-sdk": "*",
+    "n8n-workflow": "*"
+  }
 }
