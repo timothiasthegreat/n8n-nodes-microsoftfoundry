@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-microsoftfoundry",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "n8n community node to use any Microsoft Foundry model deployment (OpenAI, Anthropic/Claude, DeepSeek, Kimi, and more) as a chat model for AI Agents",
   "license": "MIT",
   "homepage": "https://github.com/timothiasthegreat/n8n-nodes-microsoftfoundry",
