@@ -57,8 +57,10 @@ name: Publish
 on:
   push:
     tags:
-      # release-it (via `n8n-node release`) creates tags as v${version},
-      # e.g. v0.2.0. This filter matches that convention.
+      # `n8n-node release` (release-it) tags as the bare version, e.g. 0.2.1
+      # (no "v" prefix). Both patterns are matched so a "v"-prefixed tag would
+      # also work if the convention ever changes.
+      - '*.*.*'
       - 'v*.*.*'
 
 jobs:
