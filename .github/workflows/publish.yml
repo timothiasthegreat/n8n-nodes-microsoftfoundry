@@ -57,9 +57,9 @@ name: Publish
 on:
   push:
     tags:
-      # Matches 0.1.0, 1.2.3, 2.0.0-rc.1, etc.
-      # See "TAG CONVENTION" above if you prefer tags with a "v" prefix.
-      - '*.*.*'
+      # release-it (via `n8n-node release`) creates tags as v${version},
+      # e.g. v0.2.0. This filter matches that convention.
+      - 'v*.*.*'
 
 jobs:
   publish:
